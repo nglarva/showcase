@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo App</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <script src="./js/script.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header-menu">
+            <h1 id="logo"><a href="#">Dashboard</a></h1>
+            <span class="search-bar">
+                <input type="text" placeholder="Search your task here">
+                <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+            </span>
+            <ul id="noti-date">
+                <span>
+                    <li id="noti-btn"><i class="fa-solid fa-bell"></i></li>
+                    <li id="calendar-btn"><i class="fa-solid fa-calendar-days"></i></li>
+                </span>
+
+                <li id="date-info">
+                    <p id="date-in-week">Tuesday</p>
+                    <p id="date-in-year">20/06/2003</p>
+                </li>
+            </ul>
+
+        </header>
+
+        <div class="side-menu">
+            <div class="profile-info">
+                <div class="avatar">
+                    <img src="https://images.unsplash.com/photo-1549150712-1d243024db80?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="anh-profile">
+                </div>
+                <h3>Ngo Van Nam</h3>
+                <p>ngovannamt36@gmail.com</p>
+            </div>
+            <ul class="side-menu-content">
+                <li class="item"><a href="#"><i class="fa-regular fa-window-restore"></i> Dashboard</a></li>
+                <li class="item"><a href="#"><i class="fa-solid fa-circle-exclamation"></i> Vital Task</a></li>
+                <li class="item"><a href="#"><i class="fa-regular fa-calendar-check"></i> My Task</a></li>
+                <li class="item"><a href="#"><i class="fa-solid fa-list-check"></i> Task Categories</a></li>
+                <li class="item"><a href="#"><i class="fa-solid fa-gear"></i> Settings</a></li>
+                <li class="item"><a href="#"><i class="fa-regular fa-circle-question"></i> Help</a></li>
+                <span><button id="btn-logout" type="submit"><i class="fa-solid fa-arrow-right-from-bracket"></i> Log
+                        out</button></span>
+            </ul>
+
+        </div>
+        <div class="menu-account">
+            <h3>Welcome, Ngô Văn Nam <i class="fa-solid fa-hand-sparkles"></i></h3>
+            <ul class="friend-invitation">
+                <li class="img-item"><img
+                        src="https://images.unsplash.com/photo-1715149721511-8e48fc0cb2f4?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mzl8fHNxdWFyZSUyMHBvcnRyYWl0fGVufDB8fDB8fHww"
+                        alt="anh-1"></li>
+                <li class="img-item"><img
+                        src="https://images.unsplash.com/photo-1558624232-75ee22af7e67?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="anh-2"></li>
+                <li class="img-item"><img
+                        src="https://images.unsplash.com/photo-1586038693164-cb7ee3fb8e2c?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="anh-3"></li>
+                <li class="img-item"><img
+                        src="https://images.unsplash.com/photo-1668092833465-457973cc21ac?q=80&w=1788&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt=""></li>
+                <li class="img-item"><img
+                        src="https://images.unsplash.com/photo-1673309809849-a2f6ebc4836f?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt=""></li>
+                <a type="button" id="btn-invite"><i class="fa-solid fa-plus"></i> Invite</a>
+            </ul>
+        </div>
+        <div class="dashboard-content">
+            <div class="left-column-task">
+                <div class="today-task">
+                    <div class="today-task-title">
+                        <div class="task-title-date">
+                            <h3><i class="fa-solid fa-business-time"></i> To-do</h3>
+                            <p>20 June <b>. Today</b></p>
+                        </div>
+                        <a href="#"><i class="fa-solid fa-plus"></i> Add task</a>
+                    </div>
+                    <div class="today-task-content">
+                        <span><i class="fa-regular fa-circle"></i></span>
+                        <div class="task-details">
+                            <h3 class="task-title">Attend Larva's Birthday Party</h3>
+                            <p class="task-description">Buy gifts on the way and pick up cake from the bakery. {6 PM |
+                                Fresh Elements}</p>
+                            <span>
+                                <p class="task-priority"> Priority: Moderate</p>
+                                <p class="task-status">Status: Not started </p>
+                            </span>
+
+                        </div>
+                        <div class="task-details-img">
+                            <div>
+                                <img src="https://plus.unsplash.com/premium_photo-1671580671733-92d038f1ea97?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                    alt="" class="task-image">
+                            </div>
+                            <p class="task-deadline">Created on: 20/06/2024</p>
+                        </div>
+                        <span><i class="fa-solid fa-ellipsis"></i></span>
+                    </div>
+                    <div class="today-task-content">
+                        <span><i class="fa-regular fa-circle"></i></span>
+                        <div class="task-details">
+                            <h3 class="task-title">Attend Larva's Birthday Party</h3>
+                            <p class="task-description">Buy gifts on the way and pick up cake from the bakery. {6 PM |
+                                Fresh Elements}</p>
+                            <span>
+                                <p class="task-priority"> Priority: Moderate</p>
+                                <p class="task-status">Status: Not started </p>
+                            </span>
+
+                        </div>
+                        <div class="task-details-img">
+                            <div>
+                                <img src="https://plus.unsplash.com/premium_photo-1671580671733-92d038f1ea97?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                    alt="" class="task-image">
+                            </div>
+                            <p class="task-deadline">Created on: 20/06/2024</p>
+                        </div>
+                        <span><i class="fa-solid fa-ellipsis"></i></span>
+                    </div>
+                    <div class="today-task-content">
+                        <span><i class="fa-regular fa-circle"></i></span>
+                        <div class="task-details">
+                            <h3 class="task-title">Attend Larva's Birthday Party</h3>
+                            <p class="task-description">Buy gifts on the way and pick up cake from the bakery. {6 PM |
+                                Fresh Elements}</p>
+                            <span>
+                                <p class="task-priority"> Priority: Moderate</p>
+                                <p class="task-status">Status: Not started </p>
+                            </span>
+
+                        </div>
+                        <div class="task-details-img">
+                            <div>
+                                <img src="https://plus.unsplash.com/premium_photo-1671580671733-92d038f1ea97?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                    alt="" class="task-image">
+                            </div>
+                            <p class="task-deadline">Created on: 20/06/2024</p>
+                        </div>
+                        <span><i class="fa-solid fa-ellipsis"></i></span>
+                    </div>
+                </div>
+                <div class="last-task">
+                    <div class="today-task-content">
+                        <span><i class="fa-regular fa-circle"></i></span>
+                        <div class="task-details">
+                            <h3 class="task-title">Attend Larva's Birthday Party</h3>
+                            <p class="task-description">Buy gifts on the way and pick up cake from the bakery. {6 PM |
+                                Fresh Elements}</p>
+                            <span>
+                                <p class="task-priority"> Priority: Moderate</p>
+                                <p class="task-status">Status: Not started </p>
+                            </span>
+
+                        </div>
+                        <div class="task-details-img">
+                            <div>
+                                <img src="https://plus.unsplash.com/premium_photo-1671580671733-92d038f1ea97?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                    alt="" class="task-image">
+                            </div>
+                            <p class="task-deadline">Created on: 20/06/2024</p>
+                        </div>
+                        <span><i class="fa-solid fa-ellipsis"></i></span>
+                    </div>
+                </div>
+            </div>
+            <div class="right-column-task">
+                <div class="task-status">
+                    <h3 class="task-status-title">Task Status</h3>
+                    <div class="progress-container">
+                        <div class="progress completed" data-value="84%">
+                                                      
+                        </div>
+                        <div class="progress in-progress" data-value="46">
+                            
+                        </div>
+                        <div class="progress not-started" data-value="13">
+                        </div>
+                        <div class="legend">
+                            <div class="legend-item">
+                                <span class="legend-dot dot-completed"></span> Completed
+                            </div>
+                            <div class="legend-item">
+                                <span class="legend-dot dot-in-progress"></span> In Progress
+                            </div>
+                            <div class="legend-item">
+                                <span class="legend-dot dot-not-started"></span> Not Started
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="completed-task">
+                    <h3 class="task-status-title">Completed Task</h3>
+                    <div class="completed-tasks-list">
+                        <div class="today-task-content">
+                            <span><i class="fa-regular fa-circle"></i></span>
+                            <div class="task-details">
+                                <h3 class="task-title">Attend Larva's Birthday Party</h3>
+                                <p class="task-description">Buy gifts on the way and pick up cake from the bakery. {6 PM |
+                                    Fresh Elements}</p>
+                                
+                                    <p class="task-status"> Status: Moderate</p>
+                                    <p>Completed 2 days ago</p>
+                                
+    
+                            </div>
+                            <div class="task-details-img">
+                                <div>
+                                    <img src="https://plus.unsplash.com/premium_photo-1671580671733-92d038f1ea97?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                        alt="" class="task-image">
+                                </div>
+                                
+                            </div>
+                            <span><i class="fa-solid fa-ellipsis"></i></span>
+                        </div>
+                        <div class="today-task-content">
+                            <span><i class="fa-regular fa-circle"></i></span>
+                            <div class="task-details">
+                                <h3 class="task-title">Attend Larva's Birthday Party</h3>
+                                <p class="task-description">Buy gifts on the way and pick up cake from the bakery. {6 PM |
+                                    Fresh Elements}</p>
+                            
+                                    <p class="task-status"> Status: Completed</p>
+                                    <p>Completed 2 days ago</p>
+                                
+    
+                            </div>
+                            <div class="task-details-img">
+                                <div>
+                                    <img src="https://plus.unsplash.com/premium_photo-1671580671733-92d038f1ea97?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                        alt="" class="task-image">
+                                </div>
+                                
+                            </div>
+                            <span><i class="fa-solid fa-ellipsis"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+
+</html>
